@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+ background-color: #f7f7f8;
+}
+
+.intro {
+    display:flex;
+    flex-direction: column;
+}
+
+.intro img {
+    padding: 0.7em 3.5em 1em;
+}
+.intro p {
+    padding: 1em 1.2em 3em;
+    line-height:1.5;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f7f7f8;
+    color: black;
+}
+
+
+.intro, .contact p, .contact ul, #email {
+    color: #54585c;
+}
+
+.container, .container h4, .container p, .container img {
+  background-color: white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+}
+
+
+nav, .intro {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: .05em;
+}
+
+nav {
+    padding: 25px 15px;
+}
+
+h1, .top-nav, .intro {
+    text-align: center;
+}
+  
+.top-nav, .top-nav li {
+    width: 100%;
+}
+  
+h1 a, .top-nav a {
+    color: #000;
+}
+
+.top-nav {
+    margin-top: 30px;
+}
+  
+.top-nav li {
+    padding: 10px 0;
+    margin: 5px auto;
+    background-color: #fff;
+}
+  
+
+.container {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    max-width: 1000px;
+    text-align: center;
+    padding: 10px 10px 40px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+
+#port-title, #contact-title {
+    text-transform: uppercase;
+    padding: 50px 0 40px;
+    text-align: center;
+}
+
+#email {
+    text-transform:none;
+}
+
+
+.col {
+    color: black;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    min-height: 250px;
+}
+.col img {
+    max-width: 100%;
+    display:block;
+    margin: 0 auto;
+}
+
+.col p {
+    padding: 0 1em 2em;
+    line-height:1.5;
+}
+
+.col h4 {
+    padding: 40px 20px 20px;
+} 
+
+footer {
+    align-items: center;
+    margin-top: auto;
+    padding: 0 20px;
+    background-color: #f7f7f8;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+.contact {
+    background-color: #f7f7f8;
+}
+
+.contact-info {
+   padding: 30px 0 60px;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f7f8;
+    padding: 30px 0;
+}
+
+.full {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .port-title {
+        width: 100%;
+        flex: 1;
+    }
+  
+    nav {
+        padding: 50px 15px 25px;
+    }
+
+    .top-nav li {
+      display: inline-block;
+      width: auto;
+      margin-right: 15px;
+      padding: 10px;
+      background-color: transparent;
+    }
+  
+    .top-nav li:last-child {
+      margin-right: 0;
+    }
+  
+    .intro {
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: left;
+      padding: 20px 30px 50px;
+    }
+    
+    .intro img {
+        order: 2;
+       padding: 0;
+    } 
+    .intro p {
+        flex: 2;
+        padding:0 10px 0 0;
+    }
+    .container {
+      flex-direction:row;
+      flex-wrap: wrap;
+      align-items:flex-start;
+    }
+
+    .col {
+       width: 50%;
+       flex-basis: calc(50%-20px); 
+       padding: 10px;
+    }
+    .col p {
+        padding: 0 50px 32px;
+    }
+    .contact p {
+        padding: 5px 130px 10px;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .footer-nav {
+        justify-content: space-between;
+    }
+
+    .list-item {
+        flex: 2;
+    }
+
+    .full {
+        display:contents;
+        margin-left: 20px;
+    }
+
+    .item-1, .item-2 {
+        padding: 0 20px 100px;
+    }
+    
+    .item-3 {
+        padding: 0 0 100px 20px;
+    }
+
+
+    
+}
+
+@media (min-width: 1024px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 50px;
+    }
+  
+    .top-nav, 
+    .top-nav li {
+      width: initial;
+      margin-bottom: 0;
+      margin-top:0;
+    }
+
+    .col {
+      flex-basis:33.333%;
+    }
+    .col p {
+        padding: 0 30px 40px;
+    }
+    
+    .intro{
+    padding: 20px 50px 50px;
+    }
+
+    .contact p {
+    padding: 0 250px;
+    }
+    
+}
