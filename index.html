@@ -5,31 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Personal Portfolio</title>
 </head>
 <body>
   <header>
       <nav>
-          <h1>Tatyana Chalik</h1>
+          <h1 id="top">Tatyana Chalik</h1>
           <ul class="top-nav">
               <li><a href="#">home</a></li>
               <li><a href="#portfolio">portfolio</a></li>
               <li><a href="#contact">contact</a></li>
+              <li><a href="#skills">skills</a></li>
           </ul>
       </nav>
-      <section class="intro">
+      <div class="intro">
        <img src="images/responsive-layout-profile.png" alt="Profile photo of Tatyana">
        <p>Hi! I'm a front-end developer who loves responsive design and css. 
            I recently finished a degree in front-end web developement at Treehouse
            and am excited to put all my skills to use!</p>
-      </section>
+       </div>
   </header>
 
  
   <div class="container">
-    <h4 id="port-title">Portfolio</h4>
+    <h4 id="portfolio">Portfolio</h4>
     <div class="col box-1">
       <img src="images/portfolio-1.png" alt="marketing image">
       <h4>Marketing Page</h4>
@@ -74,29 +75,42 @@
           button and get the result.
       </p>
     </div>
-  </div>
-    
-</body>
 
-<footer>
-    <section class="contact">
-        <h4 id="contact-title">Contact</h4>
-        <p>If you're interested in chatting or want more information about what I've
-            been working on, I'd love to hear from you!
-        </p>
-        <ul class="contact-info">
-            <li>Phone&emsp; <strong id="phone">+4 (444) 444-4444</strong></li> <br>
-            <li>Email&emsp; <a href="mailto:email.gmail.com" id="email">email@gmail.com</a></li>
+    <section id="skills">
+        <h4 id="skills-title">Skills</h4>
+        <p>The following are my software skills:</p> 
+        <ul id="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>C++</li>
         </ul>
-        </section>
-        <hr>
-  
-    <ul class="footer-nav">
+    
+    </section>
+  </div>
+
+  <section id="contact">
+      <h4 id="contact-title">Contact</h4>
+      <p>If you're interested in chatting or want more information about what I've
+            been working on, I'd love to hear from you!</p>
+      <ul class="contact-info">
+           <li>Phone&emsp; <strong id="phone">+4 (444) 444-4444</strong> <br></li> 
+           <li>Email&emsp; <a href="mailto:email.gmail.com" id="email"><u>email@gmail.com</u></a></li>
+      </ul>
+  </section>
+
+    <footer>
+    
+      <hr>
+    
+      <ul class="footer-nav">
         <li class="list-item"><strong>Tatyana Chalik</strong></li>
         <li class="top"><a href="#top">back to top</a></li>
         <li class="full "><a href="#top" class="item-1">home</a></li>
         <li class="full"><a href="#portfolio" class="item-2">portfolio</a></li>
         <li class="full"><a href="#contact" class="item-3">contact</a></li>
-    </ul>
-</footer>
+        <li class="full"><a href="#skills" class="item-4">skills</a></li>
+      </ul>
+    </footer>
+</body>
 </html>
