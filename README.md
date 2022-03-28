@@ -1,2 +1,2 @@
-# techdegree-project-2
- This is Techdegree Project 2.
+# responsive-layout
+ Created a responsive layout for mobile, tablet, and desktop formats.
